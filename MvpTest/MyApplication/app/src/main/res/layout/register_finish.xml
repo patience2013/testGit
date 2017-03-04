@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/register_finish_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入昵称"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v_nick"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#79211D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:alpha="0.4"
+            android:id="@+id/register_finish_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v_pass"
+            android:alpha="0.4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#79211D" />
+    </LinearLayout>
+
+    <Button
+        android:alpha="0.4"
+        android:enabled="false"
+        android:id="@+id/btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:onClick="onClick"
+        android:background="@drawable/login_newloginbutton"
+        android:text="完成 "
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item><!--状态栏颜色-->
+        <item name="colorAccent">#FF4081</item>
+        <item name="toolbarStyle">@style/ClubToolba</item>
+
+    </style>
+    <style name="ClubToolba" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--首页底部tabstyle-->
+    <style name="ActivityTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <!--首页radiobutton  自定义效果-->
+    <style name="RadioButtonBottomTab">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/txtsize_caption</item>
+        <item name="android:textColor">@drawable/txtcolor_gray2oran_sel1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="TextStyle_context">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_context</item>
+    </style>
+    <style name="TextStyle_gray">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/text_color_qianhui</item>
+    </style>
+    <style name="TextStyle_title_20_red">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/title_bag</item>
+    </style>
+    <style name="TextStyle_title_golden">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/text_color_golden</item>
+    </style>
+    <style name="TextStyle_title_20">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextStyle_title">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--对话框style-->
+    <style name="MyDialog1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">  
+      <item name="android:textSize">20sp</item>  
+      <item name="android:textColor">@android:color/holo_orange_dark</item>  
+    </style>  
+    <style name="MyTabLayoutTextAppearanceInverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">  
+      <item name="android:textSize">15sp</item>
+      <item name="android:textColor">@android:color/white</item>  
+    </style>  
+</resources>
